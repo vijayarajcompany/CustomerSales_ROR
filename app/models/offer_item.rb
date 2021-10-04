@@ -1,0 +1,2 @@
+class OfferItem < ApplicationRecord
+end

@@ -1,0 +1,22 @@
+<%= form_tag('/admin/promotions/import_csv', multipart: true) do %>
+  <label for="file">File to Upload</label> <%= file_field_tag "file", :multiple => true %>
+  <div><%= submit_tag 'Save' %></div>
+<% end %>
+
+
+
+    <div id="holder">
+        <div id="text">
+            <h1 class="sample-text">Play around with the model on the right!</h1>
+            <h1 class="sample-text">Just watch it rotate on its own or do it yourself with the mouse</h1>
+            <h1 class="sample-text">You can also zoom in the model!</h1>
+        </div>
+        <div id="model">
+            <model-viewer src="RobotExpressive.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
+        </div>
+    </div>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<!-- Use it like any other HTML element -->
+<model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>

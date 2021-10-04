@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  count: 1
+  packable_type: MyString
+  packable_id: 
+
+two:
+  name: MyString
+  count: 1
+  packable_type: MyString
+  packable_id: 

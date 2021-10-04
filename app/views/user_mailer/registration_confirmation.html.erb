@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+  <body>
+    <div class="emailContainer" style="max-width:600px; margin:50px auto;">
+      <div class="emailHeader" style="background-size: 619px 792px !important;background-image: url('https://pepsidrc.sgp1.digitaloceanspaces.com/Layer%201225-min.png');border-top-right-radius: 40px;border-top-left-radius: 40px !important;">
+        <img src="https://pepsidrc.sgp1.digitaloceanspaces.com/pepsiLogo%20%281%29.png" style="display: block; margin:auto; position: relative; bottom:30px;" height="160"width="150" />
+      </div>
+
+      <div class="emailContent" style="padding:10px 30px;box-shadow:0px 10px 10px #7b7b7b40;">
+        <h1 style="text-align: center;font-size: 42px;font-weight: bold;margin-bottom: -15px;color: rgb(0, 105, 170);font-family:'helvetica', Arial, sans-serif;">
+              DING DONG!
+        </h1>
+        <h4 style="text-align: center; font-weight: bold;margin-bottom: 20px; color: rgb(0, 105, 170); font-family:'helvetica', Arial, sans-serif;">  YOUR REGISTRATION IS ALMOST READY <h4>
+
+        <div class="emailContent" style="margin-top:30px;">
+          <p style="text-align:center;font-size: 18px;line-height:1.7em;margin:10px 0;font-weight: 10;"> Dear <%= @user.first_name %>,</p>
+          <p style="text-align:center;font-size: 16px;line-height: 1.7em;font-weight: 10;margin:10px 0;">
+            Thank you for signing up for the Pepsidrc Home Delivery App. Click on the below button to confirm your email.
+          </p>
+
+          <a href="<%= ENV['FRONTEND_HOST'] + '/auth/confirm-email?confirmation_token=' + @user.confirm_token %>" style="text-decoration:none;display: block;margin-left: auto;margin-right: auto;width: -20%;background:rgb(236,73,78);border-radius: 15px;color:#FFFFFF;margin: 90px auto;padding: -11% 52% 3% 31%;margin: auto;padding: 10px;" rel="nofollow" class="btn"><button style="display: block;margin-left: auto;margin-right: auto;text-align: center;background: rgb(236,73,78);border: none;color: #FFFFFF;padding: 6px -27px 0px 0px;">CONFIRM REGISTRATION</button></a>
+        </div>
+
+        </div>
+
+        <div style="margin:30px 0; text-align:center">
+            <a href="#"
+            style="text-decoration:none;font-weight:bold;color:rgb(0, 105, 170);padding:5px 10px;">HOME</a>
+            <a href="#"
+            style="text-decoration:none;font-weight:bold;color:rgb(0, 105, 170);padding:5px 10px;">SHOP</a>
+            <a href="#"
+            style="text-decoration:none;font-weight:bold;color:rgb(0, 105, 170);padding:5px 10px;">ABOUT US</a>
+            <a href="#"
+            style="text-decoration:none;font-weight:bold;color:rgb(0, 105, 170);padding:5px 10px;">HELP</a>
+        </div>
+      </div>
+      <div class="emailFooter" style="background-repeat: no-repeat;height: 100px;background-size: 618px 110px !important;border-bottom-right-radius:40px;border-bottom-left-radius:40px;background-image: url('https://pepsidrc.sgp1.digitaloceanspaces.com/footer.png');">
+      </div>
+  </body>
+</html>

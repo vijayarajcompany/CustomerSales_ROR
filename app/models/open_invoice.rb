@@ -1,0 +1,2 @@
+class OpenInvoice < ApplicationRecord
+end

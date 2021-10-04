@@ -1,0 +1,2 @@
+class TradeofferProduct < ApplicationRecord
+end

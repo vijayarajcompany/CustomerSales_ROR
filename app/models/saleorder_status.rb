@@ -1,0 +1,2 @@
+class SaleorderStatus < ApplicationRecord
+end

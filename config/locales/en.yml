@@ -1,0 +1,64 @@
+en:
+  hello: 'Hello world'
+  validation_failed: 'Validation failed'
+
+  created: '%{resource} has been created successfully.'
+  updated: '%{resource} has been updated successfully.'
+  destroy: '%{resource} has been removed successfully.'
+  imported: '%{resource} have been imported successfully.'
+
+  active_admin:
+    crop:
+      open_crop_modal: Crop Image
+      save_cropped_image: Save Cropped Image
+      cancel: Cancel
+
+  registration:
+    success: 'User has been created and is awaiting email verification. Please check your Junk E-mail folder just in case the confirmation email got delivered there instead of your inbox.'
+
+  invites:
+    sent: 'Invite has successfully been sent.'
+    accepted: 'Invite has been successfully accepted.'
+    rejected: 'Invite has been rejected.'
+    reminder: 'Reminder has been sent'
+    valid: 'Invite token is valid'
+
+  errors:
+    unauthorized: 'You are not authorize to perform this action.'
+    inactive_account: 'Your account is disabled by Admin. Please contact admin to activate back.'
+    add_division: 'Please contact to admin for add division to your account'
+    add_ern: 'Your Account Is Pending Activation By ADMIN. You will be notified by email once it is done'
+    invalid_parameter: 'Invalid Parameter'
+    insufficient_detail: 'Insufficient Detail'
+
+    verify_account: 'Please verify your account first.'
+    invalid_credentials: 'Email address or password does not match.'
+    not_activated: 'Your account activation is still pending'
+    account_not_found: 'Email id is not registered please signup first.'
+    unconfirmed_account: 'Your account verification is still pending.'
+    not_authorized: 'You are not authorized.'
+    not_found: '%{resource} not found.'
+    field_empty: '%{field} field is empty.'
+    confirmations:
+      verify_email: 'A verification email has been sent to your email address.'
+      account_confirmed: 'Your account has been verified successfully.'
+      account_created: 'Your account has been created successfully.'
+      already_verified: 'Your account has been already verified.'
+      deactivated: 'Your account has been %{type} successfully.'
+    passwords:
+      reset_password_email: 'Reset password instruction sent to email: %{email}'
+      password_reset: 'Your password has been changed successfully.'
+      invalid_token: 'Reset password token has been expired or invalid'
+      invalid: 'Invalid Password'
+      present: 'Please provide password to proceed.'
+      current_password: 'Current password Invalid.'
+    invites:
+      expired: 'Invitation Token expired.'
+      invalid_token: 'Invalid invitation token.'
+      invitation_already_accepted: 'Invitation has already been accepted'
+      no_invites_found: 'No previous invites has been found'
+      alread_accepted: 'Invite has already been accepted.'
+      invalid_type: 'Invite type is invalid'
+      user_exist: 'User already exist'
+    csv:
+      blank: 'CSV file is blank'

@@ -1,0 +1,2 @@
+class ErpAssignment < ApplicationRecord
+end
